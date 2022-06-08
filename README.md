@@ -9,16 +9,16 @@
 
 ### Summary of the project files
 #### **news.json**
-1. File contains the URL of the 10 recent articles extracted from the https://www.aljazeera.com/where/mozambique/ website, , the news text and result of the sentiment analysis performed on these articles. 
+1. File contains the URL of the 10 recent articles extracted from the https://www.aljazeera.com/where/mozambique/ website, the news text and result of the sentiment analysis performed on these articles. 
 2. Attributes: <br />
    **object-key** - URL of the news-articles <br />
-   **content** - Content of the article extracted using beautifulsoup python library. <br />
+   **text** - Content of the article extracted using beautifulsoup python library. <br />
    **SentimentScore** - Sentiment Score predicted by the Sentiment Analysis model. [Range: 0 to 1 ] <br />
    **Sentiment** - Based on the predicted score, article is categorized into "Positive", "Negative", "Mixed" and "Neutral" sentiments.
 
 
 #### **analyzer.py**
-1. This is the main file which has the code to - perform the web scrapping using beautifulsoup, show the progress using tqdm,  predict the sentiment of the extracted articles and visualize the result of sentiment detection using plotly.
+1. This is the main file which has the code to - perform the web scrapping using BeautifulSoup, show the progress using tqdm, predict the sentiment of the extracted articles and visualize the result of the sentiment detection using plotly-Bar-Chart .
 
 #### **Results Folder**
 1. The folder contains the visualization of the Bar Chart showing the result of sentiment analysis. Each articles is shown with its sentiment score and categorization.
