@@ -22,3 +22,8 @@
 
 #### **Results Folder**
 1. The folder contains the visualization of the Bar Chart showing the result of sentiment analysis. Each articles is shown with its sentiment score and categorization.
+
+#### **Performance and Output**
+1. The operation time of the code is 00:10 and the speed for sentiment detection is 1.09it/sec.
+2. The Amazon SentimentDetect API returns the score of each sentiment and the final detected sentiment for each news article.
+3. The ouput is shown in Stacked-Bar-Chart. Each bar shows the distribution of score for each sentiment on scale of 0 to 1. The sentiment covering the maximum range is the overall detected output sentiment for tht article.
